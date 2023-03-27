@@ -1,0 +1,74 @@
+// General Styles
+
+:root {
+    font-size: 62.5% !important;
+}
+
+* {
+    font-size: 1.5rem;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.centralize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.centralize-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.self-centralize {
+    align-self: center;
+    justify-self: center;
+}
+
+.mobile-content {
+    display: none;
+}
+
+.desktop-content {
+    display: inline-block;
+}
+
+.background-svg {
+    position: absolute;
+}
+
+.top-background {
+    top: 0%;
+    left: 0%;
+}
+
+.bottom-background {
+    bottom: 0%;
+    right: 0%;
+}
+
+@media all and (max-width:376px) {
+    .desktop-content {
+        display: none;
+    }
+    
+    .mobile-content {
+        display: inline-block;
+    }
+
+    .mobile-column-centralize {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@import 'body';
